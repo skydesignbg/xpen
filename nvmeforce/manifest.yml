@@ -1,6 +1,6 @@
 version: 1
-name: nvmestorage
-description: "Enable NVMe as Storage"
+name: nvmeforce
+description: "Force formate NVMe as Storage Device"
 all:
   install-script: "install.sh"
   copy: "all"
