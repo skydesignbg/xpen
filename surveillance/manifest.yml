@@ -1,6 +1,6 @@
 version: 1
 name: surveillance
-description: "58 License for Surveillance Station 9.1.1-10728"
+description: "Patch for nonDT - Surveillance Station 9.1.1-10728"
 all:
   install-script: "install.sh"
   copy: "all"
