@@ -2,7 +2,11 @@
 
 if [ "${1}" = "late" ]; then
   echo "Creating service to exec Enable NVMe"
-  cp -v /usr/bin/nvmeenable.sh /tmpRoot/usr/bin/nvmeenable.sh
+  cp -vf /usr/bin/nvmeenable.sh /tmpRoot/usr/bin/nvmeenable.sh
+  cp -vf /usr/bin/bc /tmpRoot/usr/bin/bc
+  cp -vf /usr/bin/od /tmpRoot/usr/bin/od
+  cp -vf /usr/bin/tr /tmpRoot/usr/bin/tr
+  cp -vf /usr/bin/xxd /tmpRoot/usr/bin/xxs
   DEST="/tmpRoot/lib/systemd/system/nvmeenable.service"
   echo "[Unit]"                                                                >${DEST}
   echo "Description=Enable NVMe as Storage"                                   >>${DEST}
